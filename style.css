@@ -127,10 +127,13 @@ header {
 
 
 .workingExamples{
-
     padding-bottom: 10vw;
-  
 }
+
+.bdgColor{
+  background-color: #fff2f2;
+}
+
 
 @media screen and (max-width: 980px) {
   h3 {
