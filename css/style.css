@@ -177,6 +177,7 @@ font-size: 2em;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    text-align: center;
     margin: 5px 0;
     /* padding: 150px 0px; */
     padding-top: 0px;
