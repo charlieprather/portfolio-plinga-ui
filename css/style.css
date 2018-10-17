@@ -10,16 +10,9 @@ body {
   margin: 0px;
 }
 
-
-
 body {
-    font-size: 1em !important;
-  }
-
-
-
-
-
+  font-size: 1em !important;
+}
 
 h1 {
   font-size: 2em;
@@ -50,6 +43,7 @@ img {
 }
 
 /* STRUCTURE */
+
 .videoDynamic {
   background-position: right;
 }
@@ -75,12 +69,12 @@ header {
 }
 
 .columns {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 5px 0;
-    /* padding: 150px 0px; */
-    padding-top: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+  /* padding: 150px 0px; */
+  padding-top: 30px;
 }
 
 .columns2 {
@@ -111,40 +105,43 @@ header {
 }
 
 .hero #cafe {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    font: 0/0 serif;
-    text-shadow: none;
-    color: transparent;
-    background-size: 100%;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-image: url(oldui.jpg);
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  background-size: 100%;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url(oldui.jpg);
 }
+
 .hero #cafe .inner {
-  padding-top: 63.35%; /* height/width of image */
+  padding-top: 63.35%;
+  /* height/width of image */
   display: block;
   height: 0;
 }
 
 
+.workingExamples{
 
-@media screen and (max-width: 980px) {
-
-h3{
-font-size: 2em;
-
+    padding-bottom: 10vw;
+  
 }
 
+@media screen and (max-width: 980px) {
+  h3 {
+    font-size: 2em;
+  }
   .description {
     width: 100%;
     margin-bottom: 0px;
     padding: 10vw 33%;
     padding-bottom: 0px;
   }
-
   .description2 {
     width: 100%;
     margin-bottom: 0px;
@@ -152,7 +149,6 @@ font-size: 2em;
     padding-bottom: 0px;
     padding: 150px 0px;
   }
-
   .otherprojectImages {
     height: 40vw;
     width: 100vw;
@@ -162,18 +158,15 @@ font-size: 2em;
     margin: 0px auto;
     padding: 0;
   }
-
   .columns2 .column2 {
     margin-bottom: 5px;
     flex-basis: 50%;
     padding-left: 33%;
   }
-
   .column2 {
     padding-right: 33%;
   }
-
-.columns {
+  .columns {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -181,9 +174,7 @@ font-size: 2em;
     margin: 5px 0;
     /* padding: 150px 0px; */
     padding-top: 0px;
-}
-
-
+  }
   .columns .column {
     margin-bottom: 5px;
     flex-basis: 40%;
@@ -195,48 +186,34 @@ font-size: 2em;
     flex-basis: 100%;
     margin: 0;
   }
-
   .videoDynamic {
     background-position: center;
   }
-
-   #cafe { 
+  #cafe {
     background-image: url(olduismall.jpg);
-
+  }
 }
-}
-
-
 
 @media screen and (max-device-width: 600px) {
-
   .columns .column {
     flex-basis: 90%;
   }
-
   .description {
     width: 100%;
     margin-bottom: 50px;
     padding: 0 30px;
   }
-
-.description2 {
+  .description2 {
     width: 100%;
     margin-bottom: 0px;
     padding: 30px 0px;
-}
-
-.hero #cafe .inner {
+  }
+  .hero #cafe .inner {
     padding-top: 100.00%;
     display: block;
     height: 0;
+  }
+  #cafe {
+    background-image: url(olduismall.jpg) !important;
+  }
 }
-
- #cafe { 
-      background-image: url(olduismall.jpg) !important;
-}
-
-}
-
-
-
