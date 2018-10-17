@@ -10,6 +10,17 @@ body {
   margin: 0px;
 }
 
+
+
+body {
+    font-size: 1em !important;
+  }
+
+
+
+
+
+
 h1 {
   font-size: 2em;
 }
@@ -44,7 +55,7 @@ img {
 }
 
 .wrapper {
-  padding: 150px 0px;
+  padding-top: 150px;
   max-width: 960px;
   width: 95%;
   margin: 20px auto;
@@ -64,11 +75,12 @@ header {
 }
 
 .columns {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 5px 0;
-  padding: 150px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+    /* padding: 150px 0px; */
+    padding-top: 150px;
 }
 
 .columns2 {
@@ -82,7 +94,6 @@ header {
 .column {
   flex: 1;
   margin: 2px;
-  padding: 10px;
 }
 
 .column2 {
@@ -99,40 +110,34 @@ header {
   padding: 150px 0px;
 }
 
-
-
-
-
-
-.picholder {
+.hero #cafe {
     width: 100%;
-    height: 100%;
-    min-height: 68vh;
-    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url(oldui.jpg);
 }
-
-.centerBigPic {
-  background-image: url("oldui.jpg");
-  max-height: 100%;
-  max-width: 100%;
-  height: auto;
-  width: auto;
+.hero #cafe .inner {
+  padding-top: 63.35%; /* height/width of image */
   display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-sizing: border-box;
-  margin: auto;
+  height: 0;
 }
-
-
-
 
 
 
 @media screen and (max-width: 980px) {
+
+h3{
+font-size: 2em;
+
+}
+
   .description {
     width: 100%;
     margin-bottom: 0px;
@@ -168,6 +173,16 @@ header {
     padding-right: 33%;
   }
 
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+    /* padding: 150px 0px; */
+    padding-top: 0px;
+}
+
+
   .columns .column {
     margin-bottom: 5px;
     flex-basis: 40%;
@@ -183,20 +198,19 @@ header {
   .videoDynamic {
     background-position: center;
   }
-}
-@media screen and (max-width: 680px) {
 
-.picholder {
-    width: 100%;
-    height: 100%;
-    min-height: 48vh;
-    position: relative;
+   #cafe { 
+    background-image: url(olduismall.jpg);
+
+}
 }
 
 
+
+@media screen and (max-device-width: 600px) {
 
   .columns .column {
-    flex-basis: 100%;
+    flex-basis: 90%;
   }
 
   .description {
@@ -211,4 +225,17 @@ header {
     padding: 30px 0px;
 }
 
+.hero #cafe .inner {
+    padding-top: 100.00%;
+    display: block;
+    height: 0;
 }
+
+ #cafe { 
+      background-image: url(olduismall.jpg) !important;
+}
+
+}
+
+
+
