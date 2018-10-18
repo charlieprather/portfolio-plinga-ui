@@ -64,6 +64,16 @@ img {
   background-size: cover;
 }
 
+
+.wrapperPad {
+    padding-top: 0px;
+    padding-bottom: 150px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+
 header {
   padding: 0 0px;
 }
