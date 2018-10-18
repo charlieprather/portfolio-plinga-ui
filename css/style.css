@@ -127,10 +127,40 @@ header {
 
 
 .workingExamples{
-
     padding-bottom: 10vw;
-  
 }
+
+.bdgColor{
+  background-color: #fff2f2;
+}
+
+
+.wrapperimages {
+    vertical-align: middle;
+    text-align: center;
+    margin: 1em 0;
+    padding-top: 0;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+
+.frame1 {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 100%;
+    /* border: 1px solid red; */
+    vertical-align: middle;
+}
+.hello1 {
+    vertical-align: middle;
+    max-width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+        
+
+
 
 @media screen and (max-width: 980px) {
   h3 {
