@@ -49,10 +49,10 @@ img {
 }
 
 .wrapper {
-  padding-top: 150px;
-  max-width: 960px;
-  width: 95%;
-  margin: 20px auto;
+    padding-top: 0px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
 }
 
 .wrapper2 {
