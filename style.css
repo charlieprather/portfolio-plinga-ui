@@ -49,10 +49,10 @@ img {
 }
 
 .wrapper {
-  padding-top: 150px;
-  max-width: 960px;
-  width: 95%;
-  margin: 20px auto;
+    padding-top: 0px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
 }
 
 .wrapper2 {
@@ -64,8 +64,18 @@ img {
   background-size: cover;
 }
 
+
+.wrapperPad {
+    padding-top: 0px;
+    padding-bottom: 150px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+
 header {
-  padding: 0 0px;
+padding-top: 20vw;
 }
 
 .columns {
@@ -135,6 +145,34 @@ header {
 }
 
 
+.wrapperimages {
+    vertical-align: middle;
+    text-align: center;
+    margin: 1em 0;
+    padding-top: 0;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+
+.frame1 {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 100%;
+    /* border: 1px solid red; */
+    vertical-align: middle;
+}
+.hello1 {
+    vertical-align: middle;
+    height: auto;
+    max-width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+        
+
+
+
 @media screen and (max-width: 980px) {
   h3 {
     font-size: 2em;
@@ -164,19 +202,21 @@ header {
   .columns2 .column2 {
     margin-bottom: 5px;
     flex-basis: 50%;
-    padding-left: 33%;
+    padding-right: 0%;
   }
   .column2 {
     padding-right: 33%;
   }
   .columns {
-    display: flex;
+ display: flex;
     flex-flow: row wrap;
     justify-content: center;
     text-align: center;
+    font-size: 1.5em;
     margin: 5px 0;
     /* padding: 150px 0px; */
     padding-top: 0px;
+
   }
   .columns .column {
     margin-bottom: 5px;
@@ -216,6 +256,26 @@ header {
     display: block;
     height: 0;
   }
+
+.hello1 {
+    vertical-align: middle;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    margin: 5px 0;
+    /* padding: 150px 0px; */
+    padding-top: 0px;
+}
   #cafe {
     background-image: url(olduismall.jpg) !important;
   }
