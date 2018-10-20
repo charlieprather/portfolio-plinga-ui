@@ -27,8 +27,8 @@ h1 {
 }
 
 .sampleDescription {
-  padding-right: 15vw;
-}
+    padding-right: 0vw;
+  }
 
 .videoPlaceHolder {
   height: 216px;
@@ -271,11 +271,11 @@ padding-top: 20vw;
     padding-right: 33%;
   }
   .columns {
- display: flex;
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1rem;
     margin: 5px 0;
     /* padding: 150px 0px; */
     padding-top: 0px;
@@ -287,6 +287,7 @@ padding-top: 20vw;
   }
   .columns .column:nth-last-child(2) {
     margin-right: 0;
+    text-align: left;
   }
   .columns .column:last-child {
     flex-basis: 100%;
