@@ -1,3 +1,11 @@
+html.no-touch .gallery a:hover span,
+html.touch .gallery a.touchFocus span {
+  width:100%;
+  height:101%;
+  opacity:1;
+}
+
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 * {
   box-sizing: border-box;
@@ -170,6 +178,56 @@ padding-top: 20vw;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
         
+.container {
+    max-width: 980px;
+    margin: auto;
+}
+.gallery {
+  margin: 10px;
+  list-style-type: none;
+  padding: 0;
+  font-size: 0;
+}
+.gallery li {
+    display: inline-block;
+    position: relative;
+    /* width: 13vw; */
+    width: calc(27% - 100px);
+    padding-bottom: 20%;
+}
+
+.gallery a {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.gallery a img {
+  width: 100%;
+}
+
+.gallery a span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    text-align: center;
+  
+}
+
+.descriptionText{
+      padding-top: 50%;
+}
+
+
 
 
 
@@ -177,6 +235,11 @@ padding-top: 20vw;
   h3 {
     font-size: 2em;
   }
+  .gallery li {
+    width: 33.3%;
+    padding-bottom: 33.3%;
+  }
+
   .description {
     width: 100%;
     margin-bottom: 0px;
@@ -202,7 +265,7 @@ padding-top: 20vw;
   .columns2 .column2 {
     margin-bottom: 5px;
     flex-basis: 50%;
-    padding-left: 33%;
+    padding-right: 0%;
   }
   .column2 {
     padding-right: 33%;
@@ -238,6 +301,12 @@ padding-top: 20vw;
 }
 
 @media screen and (max-device-width: 600px) {
+
+  .gallery li {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+
   .columns .column {
     flex-basis: 90%;
   }
