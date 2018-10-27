@@ -87,12 +87,16 @@ padding-top: 20vw;
 }
 
 .columns {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 5px 0;
-  /* padding: 150px 0px; */
-  padding-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+    /* padding: 150px 0px; */
+    padding: 6px;
+
+}
+.gridWork{
+padding-right: 10vw;
 }
 
 .columns2 {
@@ -339,9 +343,13 @@ flex-basis: 100%;
   #cafe {
     background-image: url(olduismall.jpg);
   }
+
+  .gridWork{
+    padding-right: 10vw;
+  }
 }
 
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
 
   .gallery li {
     width: 50%;
@@ -389,4 +397,8 @@ flex-basis: 100%;
   #cafe {
     background-image: url(olduismall.jpg) !important;
   }
+
+    .gridWork{
+padding-right: 0vw !important;
+}
 }
