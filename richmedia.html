@@ -140,78 +140,66 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
           </div>
                 </section>
-
       </div>
       </section>
-
-
-
   </div>
-
-
-
-
   </div>
 
 <div class="wrapper">
-  <h1>Sample Work:</h1>
-
-  <section class="columns videoSection">
-    <div class="column">
+    <h1>Sample Work:</h1>
+    <section class="videoSection" id="imghover" style="cursor: pointer;">
+      <a class="videoModal popup-youtube columns" href="https://www.youtube-nocookie.com/embed/xy9lpcM26co">
       <div class="column">
-        <h2 class="sampleDescription">2nd Content Area</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
-      </div>
-    </div>
-    <a class="videoModal popup-youtube" href="https://www.youtube-nocookie.com/embed/xy9lpcM26co" style="cursor: pointer;">
-    <div videoPlaceHolder ">
-               <img  class="column videoDynamic" src="css/video_placeholder_01.jpg">
+        <div class="column gridWork">
+          <h2 class="sampleDescription">2nd Content Area</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
+        </div>
+      </div><img class=" videoDynamic" id="change1" src="css/video_placeholder_01.jpg" style="width: 384px;"></a>
+    </section>
 
-    </div></a>
-  </section>
 
-  <section class="columns videoSection">
-    <div class="column">
+
+
+
+    <section class="videoSection" id="imghover2" style="cursor: pointer;">
+      <a class="videoModal popup-youtube columns" href="https://www.youtube-nocookie.com/embed/xy9lpcM26co">
       <div class="column">
-        <h2 class="sampleDescription">2nd Content Area</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
-      </div>
-    </div>
-       <a class="videoModal popup-youtube" href="https://www.youtube-nocookie.com/embed/ltONUVBsptE" style="cursor: pointer;">
-    <div videoPlaceHolder ">
-               <img  class="column videoDynamic" src="css/video_placeholder_02.jpg">
+        <div class="column gridWork">
+          <h2 class="sampleDescription">2nd Content Area</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
+        </div>
+      </div><img class=" videoDynamic" id="change2" src="css/video_placeholder_01.jpg" style="width: 384px;"></a>
+    </section>
 
-    </div></a>
-  </section>
 
-  <section class="columns videoSection">
-    <div class="column">
+
+
+
+
+    <section class="videoSection" id="imghover3" style="cursor: pointer;">
+      <a class="videoModal popup-youtube columns" href="https://www.youtube-nocookie.com/embed/xy9lpcM26co">
       <div class="column">
-        <h2 class="sampleDescription">2nd Content Area</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
-      </div>
-    </div>
-    <div class="column videoPlaceHolder videoDynamic">
-    </div>
-  </section>
+        <div class="column gridWork">
+          <h2 class="sampleDescription">2nd Content Area</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
+        </div>
+      </div><img class=" videoDynamic" id="change3" src="css/video_placeholder_01.jpg" style="width: 384px;"></a>
+    </section>
 
 
 
 
-  <section class="columns videoSection">
-    <div class="column">
+    <section class="videoSection" id="imghover4" style="cursor: pointer;">
+      <a class="videoModal popup-youtube columns" href="https://www.youtube-nocookie.com/embed/xy9lpcM26co">
       <div class="column">
-        <h2 class="sampleDescription">2nd Content Area</h2>
+        <div class="column gridWork">
+          <h2 class="sampleDescription">2nd Content Area</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
+        </div>
+      </div><img class=" videoDynamic" id="change4" src="css/video_placeholder_01.jpg" style="width: 384px;"></a>
+    </section>
+  </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
-      </div>
-    </div>
-
-  
-  <div class="column videoPlaceHolder videoDynamic">  
-    </div>
-  </section>
-    </div>
 
   <div class="wrapper" style="padding-top: 17vw;">
     <h1>Challenges, takeaways, and things learned</h1>
@@ -268,6 +256,33 @@ $(document).ready(function() {
     fixedContentPos: true
   });
 });
+
+  
+$("#imghover").hover(function(){
+  $("#change1").attr("src", "css/underImage_01.jpg");
+}, function(){
+  $("#change1").attr("src", "css/video_placeholder_01.jpg");
+});
+
+$("#imghover2").hover(function(){
+  $("#change2").attr("src", "css/underImage_01.jpg");
+}, function(){
+  $("#change2").attr("src", "css/video_placeholder_01.jpg");
+});
+
+$("#imghover3").hover(function(){
+  $("#change3").attr("src", "css/underImage_01.jpg");
+}, function(){
+  $("#change3").attr("src", "css/video_placeholder_01.jpg");
+});
+$("#imghover4").hover(function(){
+  $("#change4").attr("src", "css/underImage_01.jpg");
+}, function(){
+  $("#change4").attr("src", "css/video_placeholder_01.jpg");
+});
+
+
+
 
 </script>
 
