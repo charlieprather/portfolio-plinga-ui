@@ -2,14 +2,22 @@
 <html lang="en" >
 
 <head>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Magnific Popup core JS file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+
+
   <meta charset="UTF-8">
   <title>Rich Media Pages</title>
   
-  
-  
-      <link rel="stylesheet" href="css/style.css">
 
-  
 </head>
 
 <body>
@@ -33,7 +41,7 @@
 
 
 
-<div class="container">
+<div class="container2">
   <ul class="gallery">
    
 
@@ -146,8 +154,6 @@
   </div>
 
 <div class="wrapper">
-
-
   <h1>Sample Work:</h1>
 
   <section class="columns videoSection">
@@ -157,8 +163,25 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
       </div>
     </div>
-    <div class="column videoPlaceHolder videoDynamic">
+    <a class="videoModal popup-youtube" href="https://www.youtube-nocookie.com/embed/xy9lpcM26co" style="cursor: pointer;">
+    <div videoPlaceHolder ">
+               <img  class="column videoDynamic" src="css/video_placeholder_01.jpg">
+
+    </div></a>
+  </section>
+
+  <section class="columns videoSection">
+    <div class="column">
+      <div class="column">
+        <h2 class="sampleDescription">2nd Content Area</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
+      </div>
     </div>
+       <a class="videoModal popup-youtube" href="https://www.youtube-nocookie.com/embed/ltONUVBsptE" style="cursor: pointer;">
+    <div videoPlaceHolder ">
+               <img  class="column videoDynamic" src="css/video_placeholder_02.jpg">
+
+    </div></a>
   </section>
 
   <section class="columns videoSection">
@@ -172,33 +195,27 @@
     </div>
   </section>
 
-  <section class="columns videoSection">
-    <div class="column">
-      <div class="column">
-        <h2 class="sampleDescription">2nd Content Area</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
-      </div>
-    </div>
-    <div class="column videoPlaceHolder videoDynamic">
-    </div>
-  </section>
+
+
 
   <section class="columns videoSection">
     <div class="column">
       <div class="column">
         <h2 class="sampleDescription">2nd Content Area</h2>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
       </div>
     </div>
-    <div class="column videoPlaceHolder videoDynamic">
+
+  
+  <div class="column videoPlaceHolder videoDynamic">  
     </div>
   </section>
-
-
     </div>
 
   <div class="wrapper" style="padding-top: 17vw;">
     <h1>Challenges, takeaways, and things learned</h1>
+
 
 
     <p>Talk about learning about jquery, GSAP Javascript, etc </p> <p>Learn adobe animated in depth and after effets as well as how to syncrhonize such creations.</p> <p>Learning how to syn three videos, setting up a php server to locally run this program that actually has three html files running at once.</p> <p> Learn how to work with major clients and a tree of people with input</p> <p> Learn about marketing elements such as timing, CTAs, things of this nature.</p><p> Learn how to optimise the system by creating templates so speed up the procress.</p>
@@ -237,5 +254,22 @@
       </section>
     </div>
   </footer>
+
+
 </body>
+  <script>
+$(document).ready(function() {
+  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+    disableOn: 200,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: true
+  });
+});
+
+</script>
+
+
 </html>
