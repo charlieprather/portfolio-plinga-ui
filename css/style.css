@@ -53,6 +53,7 @@ img {
 /* STRUCTURE */
 
 .videoDynamic {
+   width: 384px; 
   background-position: right;
 }
 
@@ -203,7 +204,7 @@ padding-right: 10vw;
     position: relative;
     /* width: 13vw; */
     width: calc(27% - 100px);
-    padding-bottom: 20%;
+    padding: 3%;
 }
 
 .gallery a {
@@ -279,8 +280,9 @@ cursor: pointer !important;
     font-size: 2em;
   }
   .gallery li {
-    width: 33.3%;
-    padding-bottom: 33.3%;
+width: 33.3%;
+    /* min-width: 110px; */
+    padding: 9.3%;
   }
 
   .description {
@@ -325,8 +327,8 @@ cursor: pointer !important;
 
   }
   .columns .column {
-    margin-bottom: 5px;
-    flex-basis: 40%;
+ margin-bottom: 5px;
+    flex-basis: 60%;
   }
   .columns .column:nth-last-child(2) {
     margin-right: 0;
@@ -339,7 +341,9 @@ flex-basis: 100%;
   }
   .videoDynamic {
     background-position: center;
-  }
+    width: 60%;
+    height: 100%;
+      }
   #cafe {
     background-image: url(olduismall.jpg);
   }
