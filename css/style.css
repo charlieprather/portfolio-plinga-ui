@@ -67,11 +67,11 @@ h1 {
     border: 0;
     box-sizing: border-box;
     margin: 0px;
-    padding: 1em 1em;
+    padding: 1em 0em;
     font-size: inherit;
-    font-weight: 700;
+    /* font-weight: 700; */
     position: relative;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 .outline::before, .outline::after {
@@ -151,7 +151,7 @@ h1 {
 
 }
 
-.draw:hover { 
+.draw:hover a { 
 color:#FC534E;
 }
 
@@ -213,8 +213,9 @@ img {
 /* STRUCTURE */
 
 .videoDynamic {
-   width: 384px; 
-  background-position: right;
+    width: 384px;
+    object-fit: contain;
+    background-position: right;
 }
 
 .wrapper {
@@ -400,9 +401,10 @@ padding-right: 10vw;
 
 
 .videoModal{
-  text-decoration: none;
-color:black;
-cursor: pointer !important;
+text-decoration: none;
+    color: black;
+    margin: 0px 1em;
+    cursor: pointer !important;
 }
 
 .mfp-fade.mfp-bg {
