@@ -1,3 +1,11 @@
+html.no-touch .gallery a:hover span,
+html.touch .gallery a.touchFocus span {
+  width:100%;
+  height:101%;
+  opacity:1;
+}
+
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 * {
   box-sizing: border-box;
@@ -19,8 +27,8 @@ h1 {
 }
 
 .sampleDescription {
-  padding-right: 15vw;
-}
+    padding-right: 0vw;
+  }
 
 .videoPlaceHolder {
   height: 216px;
@@ -37,15 +45,177 @@ h1 {
   padding: 0;
 }
 
+
+
+
+
+
+
+
+
+
+.subcontainer{
+    position: relative;
+    padding-top: 50px;
+  transition: 0.3s ease;
+
+}
+
+
+.outline {
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 1em 0em;
+    font-size: inherit;
+    /* font-weight: 700; */
+    position: relative;
+    /* vertical-align: middle; */
+}
+
+.outline::before, .outline::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.draw {
+  transition: color 0.1s;
+}
+.draw::before, .draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: #f45e61;
+}
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw:hover::before {
+  border-top-color: #f45e61;
+  border-right-color: #f45e61;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  border-bottom-color: #f45e61;
+  border-left-color: #f45e61;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+
+
+.biggerBox{
+    overflow: hidden;
+    height: 26px;
+    position: absolute;
+    width: 60px;
+    top: 0px;
+}
+
+.subHeader{
+    top: -43px;
+    padding-bottom: 30px;
+    position: absolute;
+    width: 100px;
+    left: 65px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.quigly{
+      overflow: hidden;
+  background-image: url('https://ubisafe.org/images/line-svg-squiggle-3.png');
+    background-repeat: no-repeat;
+    background-size: contain;    
+    content: '';
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 100px;
+    top: -40px;
+    left: -30px;
+
+}
+
+.draw:hover a { 
+color:#FC534E;
+}
+
+.draw:hover .quigly { 
+    overflow: auto;
+    background-image: url(https://ubisafe.org/images/line-svg-squiggle-3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 100px;
+    top: -40px;
+    left: 0px;
+    animation: infinite linear;
+    animation-name: run;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes run {
+  0% {
+    left: -30px;
+  }
+  
+  100% {
+    left: -6px;
+  }
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* STRUCTURE */
 
 .videoDynamic {
-  background-position: right;
+    width: 384px;
+    object-fit: contain;
+    background-position: right;
 }
 
 .wrapper {
@@ -79,12 +249,16 @@ padding-top: 20vw;
 }
 
 .columns {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 5px 0;
-  /* padding: 150px 0px; */
-  padding-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+    /* padding: 150px 0px; */
+    padding: 6px;
+
+}
+.gridWork{
+padding-right: 10vw;
 }
 
 .columns2 {
@@ -141,7 +315,7 @@ padding-top: 20vw;
 }
 
 .bdgColor{
-  background-color: #fff2f2;
+  background-color: white;
 }
 
 
@@ -170,6 +344,96 @@ padding-top: 20vw;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
         
+.container {
+    max-width: 980px;
+    margin: auto;
+}
+
+.container2 {
+    max-width: 960px;
+    margin: auto;
+}
+
+.gallery {
+  margin: 10px;
+  list-style-type: none;
+  padding: 0;
+  font-size: 0;
+}
+.gallery li {
+    display: inline-block;
+    position: relative;
+    /* width: 13vw; */
+    width: calc(27% - 100px);
+    padding: 3%;
+}
+
+.gallery a {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.gallery a img {
+  width: 100%;
+}
+
+.gallery a span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    text-align: center;
+  
+}
+
+.descriptionText{
+      padding-top: 50%;
+}
+
+
+.videoModal{
+text-decoration: none;
+    color: black;
+    margin: 0px 1em;
+    cursor: pointer !important;
+}
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out; 
+  -moz-transition: all 0.15s ease-out; 
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out; 
+  -moz-transition: all 0.15s ease-out; 
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+
 
 
 
@@ -177,6 +441,12 @@ padding-top: 20vw;
   h3 {
     font-size: 2em;
   }
+  .gallery li {
+width: 33.3%;
+    /* min-width: 110px; */
+    padding: 9.3%;
+  }
+
   .description {
     width: 100%;
     margin-bottom: 0px;
@@ -208,36 +478,50 @@ padding-top: 20vw;
     padding-right: 33%;
   }
   .columns {
- display: flex;
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1rem;
     margin: 5px 0;
     /* padding: 150px 0px; */
     padding-top: 0px;
 
   }
   .columns .column {
-    margin-bottom: 5px;
-    flex-basis: 40%;
+ margin-bottom: 5px;
+    flex-basis: 60%;
   }
   .columns .column:nth-last-child(2) {
     margin-right: 0;
+    text-align: left;
   }
   .columns .column:last-child {
-    flex-basis: 100%;
+flex-basis: 100%;
+    text-align: left;
     margin: 0;
   }
   .videoDynamic {
     background-position: center;
-  }
+    width: 60%;
+    height: 100%;
+      }
   #cafe {
     background-image: url(olduismall.jpg);
   }
+
+  .gridWork{
+    padding-right: 10vw;
+  }
 }
 
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
+
+  .gallery li {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+
   .columns .column {
     flex-basis: 90%;
   }
@@ -279,4 +563,8 @@ padding-top: 20vw;
   #cafe {
     background-image: url(olduismall.jpg) !important;
   }
+
+    .gridWork{
+padding-right: 0vw !important;
+}
 }
