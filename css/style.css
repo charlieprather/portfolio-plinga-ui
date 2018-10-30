@@ -127,10 +127,10 @@ h1 {
 }
 
 .subHeader{
-    top: -43px;
+top: -33px;
     padding-bottom: 30px;
     position: absolute;
-    width: 100px;
+    /* width: 262px; */
     left: 65px;
     font-weight: 900;
     font-family: sans-serif;
