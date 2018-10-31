@@ -84,7 +84,7 @@ h1 {
 }
 
 .draw {
-      margin: 1em;
+      margin: 10em;
   transition: color 0.1s;
 }
 .draw::before, .draw::after {
@@ -443,6 +443,12 @@ text-decoration: none;
 
 
 
+.squiglyHolder{
+display: block;
+    padding-left: 47.0%;
+    top: -100px;
+    position: relative;
+  }
 
 
 @media screen and (max-width: 980px) {
