@@ -6,6 +6,9 @@
 
   <title>Portfolio PLINGA UI</title>
   <link href="css/style.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+
 </head>
 
 <body>
@@ -30,10 +33,35 @@
     <div class="column">
       <h3>Button bar to change:</h3>
     </div>
+
+
+
+  <div class="dottedContainer">
+<svg class="svgBox" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="1 1 148 25">
+   <a xlink:href="#">
+      <rect x="0" y="0" width="150px" height="50px" class="r"/>
+
+   </a>
+
+
+</svg>
+    </div>
+
+
+
+
+
     <div class="hero">
       <span id="cafe"><span class="inner"></span></span>
     </div>
+
+
+
+
   </div>
+
+
+
 
 
   <div class="wrapper">
@@ -120,8 +148,6 @@
 
     <div class="description2">
       <h1>Prototypes</h1>
-      <p>Here I have a selected group of working button bar prototypes.
-      </p>
     </div>
 
 
@@ -207,10 +233,14 @@
     <p>The biggest challenge that I came across working on this project was making something that was universal for our clients but still subtly representing Plinga. A big challenege the team experienced was, once we had a design that we wanted to move forward with, we had to determin if we wanted to use SVGs for the icons, did we want to use Font Awesome, or pngs? </p> <p> Some key takeaways were deepening my understanding of how jQuery works with animations and also working on a design that is universally accessible to people regardless of age or language.</p> <p> I learned quite a bit from this project, mostly regarding how to work with the needs of a plethora of clients, and how to design something that is universal for so many platforms' supporting our games.</p>
 
 
+
+
     <div class="description2" style="text-align: right;">
       <h3>Tools Used</h3>
       <p>PS AI HTML CSS JS JQUERY</p>
     </div>
+
+
   </div>
 
 
@@ -241,4 +271,25 @@
     </div>
   </footer>
 </body>
+
+
+
+<script>
+    ScrollReveal({
+        reset: true
+    });
+    ScrollReveal().reveal('.dottedContainer', {
+        delay: 1200,
+        duration: 1000,
+        easing: 'ease-in-out',
+    });
+</script>
+
+
+
+
 </html>
+
+
+
+
