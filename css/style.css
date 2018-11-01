@@ -105,15 +105,14 @@ h1 {
   top: 0px;
 }
 .subHeader{
-  top: -33px;
-  font-size: 2em;
-  padding-bottom: 30px;
-  position: absolute;
-  width: 120%;
-  
-  left: 65px;
-  font-weight: 900;
-  font-family: sans-serif;
+    top: -33px;
+    font-size: 2em;
+    padding-bottom: 30px;
+    position: absolute;
+    width: 37vw;
+    left: 65px;
+    font-weight: 900;
+    font-family: sans-serif;
 }
 .quigly{
   overflow: hidden;
@@ -364,23 +363,64 @@ header {
 }
 
 
+
+.dottedContainer{
+    position: relative;
+    width: 80%;
+    top: 95px;
+    right: -93px;
+  }
+  
+.svgBox {
+width: 100%;
+    min-width: 250px;
+    font-family: Montserrat, sans-serif;
+}
+.r {
+    width: 150px;
+    height: 27px;
+    fill: transparent;
+    stroke: #f45e61;
+    stroke-width: 6px;
+    stroke-dasharray: 6 10;
+    stroke-dashoffset: 0;
+    animation: march 30s linear infinite reverse;
+}
+.t {
+   font-size: 10px;
+   fill: #ff0;
+}
+@keyframes march {
+   100% { stroke-dashoffset: 400; }
+}
+
+
+
 @media screen and  (min-width: 601px) and (max-width: 980px) {
+
+
+
 
 
   h3 {
     font-size: 2em;
   }
 
+
+
+
 .subHeader {
     top: -54px;
     font-size: 3em;
     padding-bottom: 30px;
     position: absolute;
-    /* width: 262px; */
+    width: 80vw;
     left: 65px;
     font-weight: 900;
     font-family: sans-serif;
 }
+
+
 
 .videoModal {
     text-decoration: none;
@@ -461,8 +501,8 @@ header {
     background-image: url(olduismall.jpg);
   }
   .gridWork{
-    padding-right: 10vw;
-  }
+    padding-right: 2vw;
+      }
 }
 
 
