@@ -2,17 +2,12 @@
 <html lang="en" >
 
 <head>
-
-<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-
-<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-<!-- Magnific Popup core JS file -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-      <link rel="stylesheet" href="css/style.css">
 <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
   <meta charset="UTF-8">
   <title>Rich Media Pages</title>
@@ -67,12 +62,13 @@
   </ul>
 </div>
 
-
+</div>
+<div class="wrapper"> 
 
   <div class="description2">
     <h1>Process:</h1>
 
-    <section class="columns" style="padding-bottom: 0px;">
+    <section class="" style="padding-bottom: 0px;">
       <div class="column">
         <div class="column">
           <h2 class="">Briefing</h2>
@@ -97,10 +93,6 @@
           </div>
       </div>
       </section>
-
-
-
-
 
 
     <section class="columns" style="
@@ -257,7 +249,7 @@
 
 
 
- <p>Where do I begin <i class="em em-astonished"></i>!</p>
+ <p>Where do I begin <i class="em em-astonished"></i></p>
 
  <p>I have learned a plethora of knowledge working on these rich media campaigns.</p>
 
@@ -319,6 +311,20 @@ $(document).ready(function() {
     fixedContentPos: true
   });
 });
+
+
+var richMedia =  ScrollReveal({
+        reset: false
+    });
+
+
+richMedia.reveal('.wrapper', {
+        delay: 1200,
+        duration: 1000,
+        easing: 'ease-in-out',
+    });
+
+
 
 
 $("#imghover").hover(function(){
