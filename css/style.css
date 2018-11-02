@@ -13,13 +13,22 @@ body {
   display: block;
   margin: 0px;
 }
-body {
+/*body {
   font-size: 1em !important;
-}
+}*/
+
+
 h1 {
-  font-size: 4em;
-  padding-bottom: 8vw;
+    font-size: 7vw;
+    padding-bottom: 8vw;
 }
+
+h4{
+    font-size: 1em;
+    margin: 0;
+    font-weight: 400;
+}
+
 .sampleDescription {
   padding-right: 0vw;
 }
@@ -62,8 +71,8 @@ h1 {
   height: 100%;
 }
 .draw {
-  margin: 10em;
-  transition: color 0.1s;
+margin: 4em;
+    transition: color 0.1s;
 }
 .draw::before, .draw::after {
   border: 4px solid transparent;
@@ -208,10 +217,12 @@ header {
   padding: 150px 0px;
 }
 .column {
-  flex: 1;
-  margin: 2px;
-  padding-bottom: 4vw;
-  padding-top: 4vw;
+    flex: 1;
+    margin: 2px;
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+    padding-right: 4vw;
+
 }
 .column2 {
   flex: 1;
@@ -399,14 +410,28 @@ width: 100%;
 @media screen and  (min-width: 601px) and (max-width: 980px) {
 
 
-
+h1 {
+    font-size: 10vw;
+    padding-bottom: 8vw;
+}
 
 
   h3 {
     font-size: 2em;
   }
 
+.draw {
+    margin: 0em;
+    transition: color 0.1s;
+}
 
+
+.dottedContainer {
+    position: relative;
+    width: 76%;
+    top: 10vw;
+    right: -11vw;
+}
 
 
 .subHeader {
@@ -436,7 +461,7 @@ width: 100%;
     padding: 9.3%;
   }
   .draw {
-    margin: 0em;
+margin: 1em;
     /* text-align: justify; */
     transition: color 0.1s;
 }
@@ -509,7 +534,44 @@ width: 100%;
 @media screen and (max-width: 600px) {
 
 
+.biggerBox {
+    overflow: hidden;
+    height: 26px;
+    position: absolute;
+    width: 60px;
+    top: -10px;
+}
 
+.squiglyHolder {
+    display: block;
+    padding-left: 42%;
+    top: -100px;
+    position: inherit;
+}
+
+.subHeader {
+top: -31px;
+    font-size: 25px;
+    padding-bottom: 30px;
+    position: absolute;
+    width: 73vw;
+    left: 65px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.draw {
+    margin: 0em;
+    transition: color 0.1s;
+}
+
+.dottedContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    top: 22vw;
+    right: 0px;
+}
 
   .gallery li {
     width: 50%;
@@ -545,11 +607,10 @@ width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    text-align: center;
-    font-size: 3em !important;
+    text-align: justify;
     margin: 5px 0;
-
     padding-top: 0px;
+}
   }
 
 
@@ -561,3 +622,16 @@ width: 100%;
     padding-right: 0vw !important;
   }
 }
+
+
+
+
+}
+
+
+
+
+
+
+
+
