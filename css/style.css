@@ -37,7 +37,7 @@ h4{
 .topRich{
     width: 100%;
     height: 100vh;
-    background-image:url(https://twimg0-a.akamaihd.net/a/1350072692/t1/img/front_page/jp-mountain@2x.jpg);
+    background-image:url(controlPanel.gif);
     background-size: cover;
     background-attachment:fixed;
     margin: 0;
@@ -52,6 +52,15 @@ h4{
     background: black url(http://www.electrictoolbox.com/images/rangitoto-3072x200.jpg) no-repeat;
     background-size: 100% 100%;
 }
+
+.titleText{
+  text-align: center;
+    color: #ffffff;
+    background: #00000078;
+
+}
+
+
 
 
 .sampleDescription {
@@ -303,8 +312,8 @@ img {
     margin: 20px auto;
 }
 header {
-  padding-top: 10vw;
-}
+    padding-top: 30vh;
+  }
 .columns {
   display: flex;
   flex-flow: row wrap;
@@ -693,6 +702,16 @@ margin: 1em;
 @media screen and (max-width: 600px) {
 
 
+.titleText {
+    top: -18vw;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    background: #00000078;
+}
+
+
+
 .biggerBox {
     overflow: hidden;
     height: 26px;
@@ -737,11 +756,12 @@ margin: 1em;
 }
 
 .topRich{
-    width: 100%;
+width: 100%;
     height: 50vh;
-    background-image:url(https://twimg0-a.akamaihd.net/a/1350072692/t1/img/front_page/jp-mountain@2x.jpg);
+    background-image: url(controlPanel.gif);
     background-size: cover;
-    background-attachment:fixed;
+    background-position-x: center;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     }
@@ -825,7 +845,6 @@ top: -31px;
 
 
 }
-
 
 
 
