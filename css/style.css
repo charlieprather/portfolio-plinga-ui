@@ -293,6 +293,11 @@ img {
   object-fit: contain;
   background-position: right;
 }
+
+.brokenSection{
+  padding-bottom: 150px;
+}
+
 .wrapper {
   padding-top: 0px;
   max-width: 1080px;
@@ -592,6 +597,10 @@ float: right;
     padding-bottom: 3vw;
 }
 
+.brokenSection{
+  padding-bottom: 0px;
+}
+
 .sideTextRight{
     float: none;
     width: 100%;
@@ -749,6 +758,11 @@ margin: 1em;
   width: 100%;
 }
 
+.brokenSection{
+  padding-bottom: 0px;
+}
+
+
 .sideText{
      float: none;
     width: 100%;
@@ -851,7 +865,6 @@ top: -31px;
 
 
 }
-
 
 
 
