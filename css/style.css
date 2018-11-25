@@ -419,6 +419,12 @@ header {
     height: 0;
 }
 
+.growth{
+
+    width: 60%;
+    padding-left: 8vw;
+    padding-right: 0vw;
+}
 
 
 .workingExamples{
@@ -686,6 +692,15 @@ margin: 1em;
     padding-bottom: 0px;
     padding: 40px 0px;
   }
+
+  .growth {
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 10vw 0%;
+    padding-bottom: 0px;
+    padding: 40px 0px;
+  }
+
   .otherprojectImages {
     height: 40vw;
     width: 100vw;
@@ -739,6 +754,17 @@ margin: 1em;
   .gridWork{
     padding-right: 0vw;
       }
+
+.hero2 #cafe2 .inner2 {
+    padding-top: 188%;
+    display: block;
+    height: 0;
+}
+
+  #cafe2 {
+    background-image: url(https://via.placeholder.com/800x1500?text=Visit+Blogging.com+Now%20C/O%20https://placeholder.com/) !important;
+}
+
 }
 
 
@@ -858,6 +884,13 @@ top: -31px;
     margin-bottom: 0px;
     padding: 30px 0px;
   }
+
+  .growth {
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 30px 0px;
+  }
+
   .hero #cafe .inner {
     padding-top: 100.00%;
     display: block;
