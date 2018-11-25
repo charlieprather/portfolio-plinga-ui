@@ -46,13 +46,6 @@ h4{
 
 
 
-#brainStormImage {
-    height: 200px; 
-    width: 100%;
-    background: black url(http://www.electrictoolbox.com/images/rangitoto-3072x200.jpg) no-repeat;
-    background-size: 100% 100%;
-}
-
 .titleText{
 text-align: center;
     color: #ffffff;
@@ -65,6 +58,16 @@ text-align: center;
 
 
 }
+
+
+#image-container{
+    display: inline-block;
+}
+
+/*#imageWork{   
+  display: block;
+    position: relative;
+  }*/
 
 .sampleDescription {
   padding-right: 0vw;
@@ -395,6 +398,29 @@ header {
   display: block;
   height: 0;
 }
+
+
+.hero2 #cafe2 {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url(https://via.placeholder.com/1920x1500?text=Visit+Blogging.com+Now%20C/O%20https://placeholder.com/);
+}
+.hero2 #cafe2 .inner2 {
+    padding-top: 80%;
+    display: block;
+    height: 0;
+}
+
+
+
 .workingExamples{
   padding-bottom: 10vw;
 }
@@ -707,6 +733,9 @@ margin: 1em;
   #cafe {
     background-image: url(olduismall.jpg);
   }
+    #cafe2 {
+    background-image: url(olduismall.jpg);
+  }
   .gridWork{
     padding-right: 0vw;
       }
@@ -834,6 +863,15 @@ top: -31px;
     display: block;
     height: 0;
   }
+
+  .hero2 #cafe2 .inner2 {
+    padding-top: 190%;
+    display: block;
+    position: relative;
+    height: 100px;
+    width: 100%;
+  }
+
   .hello1 {
     vertical-align: middle;
     height: auto;
@@ -854,6 +892,10 @@ top: -31px;
 #cafe{ 
     background-image: url(olduismall.jpg) !important;
   }
+
+  #cafe2 {
+    background-image: url(https://via.placeholder.com/800x1500?text=Visit+Blogging.com+Now%20C/O%20https://placeholder.com/) !important;
+}
 
 
   .gridWork{
