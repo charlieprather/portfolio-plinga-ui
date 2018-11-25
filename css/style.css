@@ -32,6 +32,15 @@ h4{
   text-align: right;
 }
 
+#myVideo {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 
 
 .topRich{
@@ -233,7 +242,8 @@ margin: 4em;
     margin-top: 0vw;
 }
 
-.videoSampleWork{       width: 49%;
+.videoSampleWork{       
+  width: 49%;
 }
 
 .subHeader{
@@ -832,7 +842,7 @@ margin: 1em;
 
 .topRich{
 width: 100%;
-    height: 50vh;
+    height: 100vh;
     background-image: url(controlPanel.gif);
     background-size: cover;
     background-position-x: center;
