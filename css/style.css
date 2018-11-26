@@ -33,12 +33,13 @@ h4{
 }
 
 #myVideo {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
+    object-fit: cover;
+    width: 100vw;
+    z-index: -1;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -55,15 +56,15 @@ h4{
 .videoOverlay{
     width: 100%;
     top: 0px;
-    z-index: 1;
+    z-index: -1;
     position: absolute;
     height: 100vh;
-    opacity: .3;
+    opacity: 1;
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    background: url(http://s14.directupload.net/images/111129/44ga9qid.png);
+    background: url(mesh.png);
 
 }
 
