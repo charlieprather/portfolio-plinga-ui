@@ -937,7 +937,7 @@ width: 100%;
 
   .gallery li {
     width: 50%;
-    padding-bottom: 50%;
+    padding-bottom: 3vh;
   }
   .columns .column {
     flex-basis: 90%;
