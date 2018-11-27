@@ -645,12 +645,10 @@ width: 100%;
 @media screen and  (min-width: 601px) and (max-width: 980px) {
 
 
-
-
-
 h1 {
-    font-size: 10vw;
+    font-size: 10vw !important;
     padding-bottom: 8vw;
+
 }
 
 
@@ -829,6 +827,19 @@ margin: 1em;
 
 @media screen and (max-width: 600px) {
 
+h1 {
+    font-size: 10vw !important;
+    padding-bottom: 8vw;
+
+}
+
+
+.column2 {
+    flex: auto;
+    margin: 2px;
+    padding: 10px;
+}
+
 
 .titleText {
     top: -18vw;
@@ -901,7 +912,7 @@ width: 100%;
 
 
 .subHeader {
-top: -31px;
+    top: -31px;
     font-size: 25px;
     padding-bottom: 30px;
     position: absolute;
@@ -996,8 +1007,8 @@ top: -31px;
 
 
 
-}
 
+}
 
 
 
