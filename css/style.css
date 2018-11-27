@@ -20,6 +20,13 @@ body {
 
 h1 {
     font-size: 5vw;
+    color:#fc534e;
+
+}
+
+h3{
+
+
 }
 
 h4{
@@ -642,9 +649,9 @@ h1 {
 }
 
 
-  h3 {
+/*  h3 {
     font-size: 2em;
-  }
+  }*/
 
 .draw {
     margin: 0em;
