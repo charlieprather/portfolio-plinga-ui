@@ -448,7 +448,9 @@ header {
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-image: url(https://via.placeholder.com/1920x1500?text=Visit+Blogging.com+Now%20C/O%20https://placeholder.com/);
+        background-image: url(staticPsdHorizontal.jpg);
+
+
 }
 .hero2 #cafe2 .inner2 {
     padding-top: 80%;
@@ -975,7 +977,6 @@ top: -31px;
 
 
 }
-
 
 
 
