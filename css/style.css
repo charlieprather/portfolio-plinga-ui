@@ -1,3 +1,8 @@
+:root {
+    --bigRed: #fc534e; 
+    --imageShadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
 html.no-touch .gallery a:hover span,html.touch .gallery a.touchFocus span {
   width:100%;
   height:101%;
@@ -13,14 +18,12 @@ body {
   display: block;
   margin: 0px;
 }
-/*body {
-  font-size: 1em !important;
-}*/
+
 
 
 h1 {
     font-size: 5vw;
-    color:#fc534e;
+    color: var(--bigRed); 
 
 }
 
@@ -38,6 +41,9 @@ h4{
 .responsibilities{
   text-align: right;
 }
+
+
+
 
 #myVideo {
     object-fit: cover;
@@ -104,9 +110,7 @@ text-align: center;
 
 
 .imagesRich{
-
-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
+box-shadow: var(--imageShadow);
 }
 
 
@@ -311,7 +315,7 @@ margin: 4em;
   left: -30px;
 }
 .draw:hover a {
-  color:#FC534E;
+    color: var(--bigRed); 
 }
 .draw:hover .quigly {
   overflow: auto;
@@ -348,7 +352,7 @@ img {
     width: 384px;
     object-fit: contain;
     background-position: right;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: var(--imageShadow);
 }
 
 .brokenSection{
@@ -509,7 +513,7 @@ header {
   vertical-align: middle;
   height: auto;
   max-width: 100%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: var(--imageShadow);
 }
 .container {
   max-width: 980px;
@@ -963,7 +967,7 @@ top: -31px;
     height: auto;
     max-width: 100%;
     width: 100%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: var(--imageShadow); 
   }
 
   .columns {
