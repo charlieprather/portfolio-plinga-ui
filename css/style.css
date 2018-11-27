@@ -96,6 +96,13 @@ text-align: center;
 }
 
 
+.imagesRich{
+
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+
 #image-container{
     display: inline-block;
 }
@@ -329,9 +336,11 @@ img {
 }
 /* STRUCTURE */
 .videoDynamic {
-  width: 384px;
-  object-fit: contain;
-  background-position: right;
+    height: 100%;
+    width: 384px;
+    object-fit: contain;
+    background-position: right;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .brokenSection{
@@ -448,9 +457,7 @@ header {
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-        background-image: url(staticPsdHorizontal.jpg);
-
-
+    background-image: url(https://via.placeholder.com/1920x1500?text=Visit+Blogging.com+Now%20C/O%20https://placeholder.com/);
 }
 .hero2 #cafe2 .inner2 {
     padding-top: 80%;
@@ -977,6 +984,7 @@ top: -31px;
 
 
 }
+
 
 
 
