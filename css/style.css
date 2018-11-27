@@ -336,6 +336,7 @@ img {
 }
 /* STRUCTURE */
 .videoDynamic {
+    margin-top: 3vw;
     height: 100%;
     width: 384px;
     object-fit: contain;
