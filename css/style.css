@@ -8,12 +8,14 @@ html.no-touch .gallery a:hover span,html.touch .gallery a.touchFocus span {
   height:101%;
   opacity:1;
 }
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Cabin", sans-serif;
   color: black;
   display: block;
   margin: 0px;
@@ -22,18 +24,21 @@ body {
 
 
 h1 {
+    font-family: "Cabin", sans-serif;
     font-size: 5vw;
     color: var(--bigRed); 
 
 }
 
 h3{
-
-
+    font-family: "Cabin", sans-serif;
+    font-size: 5vw;
+    color: var(--bigRed); 
 }
 
 h4{
-    font-size: 1em;
+    font-family: "Cabin", sans-serif;
+    font-size: 2vw;
     margin: 0;
     font-weight: 400;
 }
