@@ -104,17 +104,31 @@ h4{
   
 }
 
+
+.richFianl3{    
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    width: 520px;
+}
+
+
 .richFianl{
-    position: relative;
-    right: -22%;
-    top: -140px;
-    width: 71%; 
+    position: absolute;
+    right: 8%;
+    top: 80%;
+    width: 71%;
 }
 
 
 .richPath {
    stroke-dasharray: 70;
   animation: dash 14s linear infinite;
+}
+
+
+.static{
+    padding-top: 30vh;
 }
 
 @keyframes dash {
