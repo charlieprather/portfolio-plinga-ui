@@ -99,6 +99,35 @@ h4{
 
 
 
+.richDiagram{
+    width: 58%;
+  
+}
+
+.richFianl{
+    position: relative;
+    right: -22%;
+    top: -140px;
+    width: 71%; 
+}
+
+
+.richPath {
+   stroke-dasharray: 70;
+  animation: dash 14s linear infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
 
 .titleText{
 text-align: center;
