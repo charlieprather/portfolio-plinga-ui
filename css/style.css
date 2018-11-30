@@ -23,6 +23,66 @@ body {
 
 
 
+
+.dropCirlce {
+    top: -19px;
+    text-align: center;
+    position: relative;
+    z-index: -3;
+  }
+
+nav {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: -15px;
+    left: 0px;
+    z-index: 50;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+
+}
+nav ul {
+    padding: 0px;
+    display: flex;
+    background: white;
+  }
+nav ul a {
+  text-decoration: none;
+  color: #424242;
+  font-size: 30px;
+  width: 33.3333333333%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul a:nth-child(odd):hover {
+  background-color: #44F2CA;
+}
+nav ul a:nth-child(even):hover {
+  background-color: #44F2CA;
+}
+
+nav ul:hover::after nav {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+nav:hover {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+li{
+  list-style: none
+}
+
+
 h1 {
     font-family: "Cabin", sans-serif;
     font-size: 5vw;
