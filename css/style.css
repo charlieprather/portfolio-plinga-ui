@@ -1,5 +1,5 @@
 :root {
-    --bigRed: #fc534e; 
+    --bigRed: #f45e61;; 
     --imageShadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -21,7 +21,17 @@ body {
   margin: 0px;
 }
 
+.cls-1 {
+    fill: none;
+    stroke: #000000;
+    stroke-miterlimit: 10;
+}
 
+.cls-2 {
+    fill: none;
+    stroke: #fc534e;
+    stroke-miterlimit: 10;
+}
 
 
 .dropCirlce {
@@ -36,7 +46,7 @@ nav {
     width: 100%;
     height: 50px;
     position: fixed;
-    top: -15px;
+    top: -16px;
     left: 0px;
     z-index: 50;
     -webkit-transform: translateY(-100%);
@@ -50,7 +60,8 @@ nav ul {
     padding: 0px;
     display: flex;
     background: white;
-  }
+    box-shadow: var(--imageShadow);
+      }
 nav ul a {
   text-decoration: none;
   color: #424242;
@@ -62,10 +73,12 @@ nav ul a {
   align-items: center;
 }
 nav ul a:nth-child(odd):hover {
-  background-color: #44F2CA;
-}
+ background-color: var(--bigRed);
+    color: white;  
+  }
 nav ul a:nth-child(even):hover {
-  background-color: #44F2CA;
+  background-color: var(--bigRed);
+    color: white; 
 }
 
 nav ul:hover::after nav {
@@ -734,7 +747,7 @@ width: 100%;
     width: 150px;
     height: 27px;
     fill: transparent;
-    stroke: #f45e61;
+    stroke: var(--bigRed);
     stroke-width: 6px;
     stroke-dasharray: 6 10;
     stroke-dashoffset: 0;
