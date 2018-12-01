@@ -178,14 +178,6 @@ h4{
 }
 
 
-.richFianl3{    
-    position: absolute;
-    left: 10%;
-    bottom: 30%;
-    width: 520px;
-}
-
-
 .richFianl{
     position: absolute;
     right: 8%;
@@ -200,8 +192,8 @@ h4{
 }
 
 
-.static{
-    padding-top: 30vh;
+.static {
+    padding-top: 22vw;
 }
 
 @keyframes dash {
@@ -290,46 +282,7 @@ box-shadow: var(--imageShadow);
     color: #f45e61;
 
 }
-/*
-.progress-top,
-.progress-right,
-.progress-bottom,
-.progress-left {
-  position: fixed;
-  z-index: 999;
-  background-color: #f45e61;
-}
 
-.progress-top,
-.progress-bottom {
-  height: 6px;
-}
-
-.progress-right,
-.progress-left {
-  width: 6px;
-}
-
-.progress-top,
-.progress-right {
-  top: 0;
-}
-
-.progress-top,
-.progress-left {
-  left: 0;
-}
-
-.progress-bottom,
-.progress-left {
-  bottom: 0;
-}
-
-.progress-bottom,
-.progress-right {
-  right: 0;
-}
-*/
 
 .outline {
   background: none;
@@ -730,6 +683,37 @@ header {
 }
 
 
+.richRough{
+    top: -50px;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.00), 0 0px 0px rgba(0,0,0,0.00);
+    position: absolute;
+    width: 43vw;
+    left: 1%;
+    max-width: 600px;
+}
+
+
+.richFianl3{    
+top: 49%;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.00), 0 0px 0px rgba(0,0,0,0.00);
+    position: absolute;
+    width: 43vw;
+    left: 1%;
+    max-width: 500px;
+}
+
+
+.richRough2{
+    top: 150px;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.00), 0 0px 0px rgba(0,0,0,0.00);
+    position: absolute;
+    width: 43vw;
+    right: 0%;
+    max-width: 600px;
+}
+
+
+
 
 .dottedContainer{
     position: relative;
@@ -763,6 +747,7 @@ width: 100%;
 
 
 
+
 @media screen and  (min-width: 601px) and (max-width: 980px) {
 
 
@@ -770,6 +755,10 @@ h1 {
     font-size: 10vw !important;
     padding-bottom: 8vw;
 
+}
+
+.static {
+    padding-top: 10vh;
 }
 
 
@@ -810,6 +799,36 @@ float: right;
 .brokenSection{
   padding-bottom: 0px;
 }
+
+.richRough2 {
+    top: 210px;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.00), 0 0px 0px rgba(0,0,0,0.00);
+    position: absolute;
+    width: 43vw;
+    right: 0%;
+    max-width: 600px;
+}
+
+.richRough {
+    top: 4vw;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.00), 0 0px 0px rgba(0,0,0,0.00);
+    position: absolute;
+    width: 43vw;
+    left: 1%;
+    max-width: 600px;
+}
+
+
+.richFianl3 {
+    top: 52%;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.00), 0 0px 0px rgba(0,0,0,0.00);
+    position: absolute;
+    width: 43vw;
+    left: 1%;
+    max-width: 500px;
+}
+
+
 
 .sideTextRight{
     float: none;
@@ -1124,13 +1143,49 @@ width: 100%;
     padding-right: 0vw !important;
   }
 
-
-
-
-
-
 }
 
+
+
+@media only screen  and (min-width : 1824px){  
+
+.richRough{
+    top: -50px;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.00), 0 0px 0px rgba(0,0,0,0.00);
+    position: absolute;
+    width: 43vw;
+    left: 7%;
+    max-width: 600px;
+}
+
+
+.richRough2{
+    top: 150px;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.00), 0 0px 0px rgba(0,0,0,0.00);
+    position: absolute;
+    width: 43vw;
+    right: 15%;
+    max-width: 600px;
+}
+
+
+.richFianl3 {
+    top: 49%;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.00), 0 0px 0px rgba(0,0,0,0.00);
+    position: absolute;
+    width: 43vw;
+    left: 15%;
+    max-width: 600px;
+}
+
+.description2 {
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+}
 
 
 
