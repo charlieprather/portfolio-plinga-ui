@@ -56,6 +56,12 @@ nav {
     transition: transform 0.4s, -webkit-transform 0.4s;
 
 }
+
+iframe{
+      box-shadow: var(--imageShadow);
+}
+
+
 nav ul {
     padding: 0px;
     display: flex;
