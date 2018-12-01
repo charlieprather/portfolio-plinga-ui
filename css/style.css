@@ -1029,6 +1029,12 @@ h1 {
     padding: 10px;
 }
 
+.columns2 {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
 
 .titleText {
     top: 12vw;
