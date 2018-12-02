@@ -61,6 +61,20 @@ iframe{
       box-shadow: var(--imageShadow);
 }
 
+.contactFooter{
+    font-size: 7vw;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    bottom: 0px;
+    z-index: -1;
+    font-weight: 900;
+    text-align: center;
+    width: 100%;
+    background-color: var(--bigRed);
+    height: 8vw;
+}
+
 .mainFarmImage{
     width: 100%;
     position: relative;
