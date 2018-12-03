@@ -61,8 +61,29 @@ iframe{
       box-shadow: var(--imageShadow);
 }
 
+.FarmBackgroundColor{
+  width: 100vw;
+    z-index: -2;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+background: linear-gradient(180deg, #f45e61, #ffffff);
+background-size: 400% 400%;
+
+animation: farmBackground 8s ease infinite;
+}
+
+
+@keyframes farmBackground { 
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+
+
 .contactFooter{
-    font-size: 7vw;
+    font-size: 6vw;
     overflow: hidden;
     position: relative;
     color: white;
