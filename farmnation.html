@@ -35,12 +35,16 @@
 <div id="controlPanel">
   <img style="object-fit: cover;
     width: 100vw;
-    z-index: -1;
+    z-index: -2;
     height: 100vh;
     position: absolute;
     top: 0;
-    left: 0;" src="css/controlPanel.gif" >
+    left: 0;" src="https://res.cloudinary.com/dqle7rqpy/image/upload/v1543867950/FarmNationBDG_1_wjieyq.png" >
 </div>
+
+<div class="FarmBackgroundColor">
+</div>
+
 
 
   <div class="wrapper" style="margin-top:0px;">
@@ -102,11 +106,6 @@
 </div>
 
 
-
-
-
-
-
   <div class="brokenSection">
   <div class="wrapper">
       <h1>Brainstorming</h1>
@@ -132,38 +131,50 @@
  <div class="brokenSection">
   <div class="wrapper">
       <h1>Flow</h1>
-          </div>
-    <div class="description2">
- </div>
-   <img class="mainFarmImage" src="css/flow.jpg">
-</div>
+<section class="columns">          
 
-
- <div class="brokenSection">
-  <div class="wrapper">
-      <h1>Flow</h1>
-<section class="columns">
-          <div class="column">
+                            <div class="column" style="max-width: 480px;">
                   <div class="gridWork">
-   <img class="mainFarmImage" src="css/flow.jpg">
+                              <h2 class="">Home</h2>
 
-          </div>
-                  </div>
-
-                            <div class="column">
-                  <div class="gridWork">
-   <img class="mainFarmImage" src="css/flow.jpg">
+   <img class="mainFarmImage" src="css/landingPage.jpg">
 
           </div>
                   </div>
                
 
-          <div class="column">
+                            <div class="column" style="max-width: 480px;">
                             <div class="gridWork">
-   <img class="mainFarmImage" src="css/flow.jpg">
+                                        <h2 class="">Login</h2>
+   <img class="mainFarmImage" src="css/login.jpg">
 </div>
                   </div>
  </section>
+
+
+ <section class="columns">          
+
+                            <div class="column" style="max-width: 480px;">
+                  <div class="gridWork">
+                              <h2 class="">Play Game</h2>
+
+   <img class="mainFarmImage" src="css/playGame.jpg">
+
+          </div>
+                  </div>
+               
+
+                            <div class="column" style="max-width: 480px;">
+                            <div class="gridWork">
+                                        <h2 class="">Game Info</h2>
+
+   <img class="mainFarmImage" src="css/infoGame.jpg">
+</div>
+                  </div>
+ </section>
+
+
+
                    </div>
                   </div>
 
@@ -408,7 +419,7 @@
       </section>
     </div>
 
-<div class="contactFooter">CHARLIEPRATHER@GMAIL.COM</div>
+<div class="contactFooter">CHARLIEPRATHER17@GMAIL.COM</div>
 
 
   </footer>
@@ -440,105 +451,6 @@
 
 
 
-
-// This below the aniamtion for each button bar!
-
-//       var list =  ScrollReveal({
-//         reset: false
-//     });
-
-// list.reveal('.frame1', {
-//         delay: 1500,
-//         duration: 700,
-//         easing: 'ease-in-out',
-//         scale:.85,
-//         interval: 80
-
-//     });
-
-
-
-
-
-
-
-
-
-// var richMedia =  ScrollReveal({
-//         reset: false
-//     });
-
-
-// richMedia.reveal('.wrapper', {
-//         delay: 200,
-//         duration: 1000,
-//         easing: 'ease-in-out',
-//     });
-
-
-// const ProgressScroll = (() => {
-//   let s;
-
-//   return {
-//     settings() {
-//       return {
-//         top: $('.progress-top'),
-//         right: $('.progress-right'),
-//         bottom: $('.progress-bottom'),
-//         left: $('.progress-left'),
-//         windowHeight: $(window).height(),
-//         windowWidth: $(window).width(),
-//         scrollHeight: $(document).height() - $(window).height(),
-//         progressTotal: $(window).height() * 2 + $(window).width() * 2,
-//         scrollPosition: $(document).scrollTop()
-//       };
-//     },
-
-//     init() {
-//       s = this.settings();
-//       this.bindEvents();
-//     },
-
-//     bindEvents() {
-//       $(document).on('scroll', this.onScroll);
-//       $(window).on('resize', this.onResize);
-
-//       this.progress();
-//     },
-
-//     onScroll() {
-//       s.scrollPosition = $(document).scrollTop();
-
-//       ProgressScroll.requestTick();
-//     },
-
-//     onResize() {
-//       s.windowHeight = $(window).height();
-//       s.windowWidth = $(window).width();
-//       s.scrollHeight = $(document).height() - s.windowHeight;
-//       s.progressTotal = s.windowHeight * 2 + s.windowWidth * 2;
-
-//       ProgressScroll.requestTick();
-//     },
-
-//     requestTick() {
-//       requestAnimationFrame(this.progress);
-//     },
-
-//     progress() {
-//       const percentage = s.scrollPosition / s.scrollHeight;
-//       const width = s.windowWidth / s.progressTotal;
-//       const height = s.windowHeight / s.progressTotal;
-
-//       s.top.css('width', `${(percentage / width) * 100}%`);
-//       s.right.css('height', `${((percentage - width) / height) * 100}%`);
-//       s.bottom.css('width', `${((percentage - width - height) / width) * 100}%`);
-//       s.left.css('height', `${((percentage - width - height - width) / height) * 100}%`);
-//     }
-//   };
-// })();
-
-// ProgressScroll.init();
 
 
 </script>
