@@ -3,17 +3,22 @@
     --imageShadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+
+
 html.no-touch .gallery a:hover span,html.touch .gallery a.touchFocus span {
   width:100%;
   height:101%;
   opacity:1;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Cabin);
+
 
 * {
   box-sizing: border-box;
 }
+
+
 body {
   font-family: "Cabin", sans-serif;
   color: black;
@@ -32,6 +37,192 @@ body {
     stroke: #fc534e;
     stroke-miterlimit: 10;
 }
+
+.top{
+  position: relative;
+  height: 100vh;
+}
+
+
+#home {
+  mix-blend-mode: difference;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  bottom: 0px;
+  right: -20px;
+  z-index: 1;
+  margin: 1em;
+}
+
+#home:hover {
+  background-color: none;
+}
+
+#home::before {
+  height: 2px;
+  width: 15px;
+  background-color: white;
+  position: absolute;
+  top: 45%;
+  left: 13px;
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+}
+
+#home::after {
+  height: 2px;
+  width: 15px;
+  background-color: white;
+  position: absolute;
+  top: 45%;
+  right: 13px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+
+#meBdg iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.silhou {
+  z-index: 100;
+  position: absolute;
+}
+
+#one {
+
+    position: relative;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+    background: white;
+}
+
+#two {
+    position: relative;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+    background: white;
+    background: white;
+}
+
+#three {
+    position: relative;
+    padding-top: 6vw;
+    height: 100vh;
+    padding-bottom: 6vw;
+    background: white;
+}
+
+/*  THIS IS THE GIRD SYSTEM!!!!  */
+.grid-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.toggle {
+  text-align: center;
+  padding: 0;
+  color: white;
+}
+
+.toggle li {
+  display: inline;
+  padding: 0 60px;
+}
+
+.toggle label {
+  font-size: 1.2em;
+  padding: 0 10px;
+}
+
+.grid {
+    margin: 0 auto;
+    float: right;
+}
+
+.item {
+  color: white;
+  display: table;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 5px;
+  width: 270px;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.34);
+}
+
+.item:hover .title {
+  opacity: 1;
+}
+
+.title {
+  display: table-cell;
+  vertical-align: middle;
+  opacity: 0;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+}
+
+.i1 {
+    background: black;
+    height: 100px;
+    width: 100px;
+    background-color: var(--bigRed);
+    box-shadow: var(--imageShadow);
+}
+
+.i3, .i6, .i7 {
+
+background-color: var(--bigRed);
+    box-shadow: var(--imageShadow);  height: 280px;
+}
+
+.i3 {
+
+  background: none;
+ height: 100px;
+    width: 100px;
+  margin-left: 30px;
+}
+
+.i2, .i4, .i8 {
+
+background-color: var(--bigRed);
+    box-shadow: var(--imageShadow);  height: 180px;
+}
+
+.i5{
+
+height: 100px;
+width: 100px;
+
+}
+
+.i9, .i10, .i11, .i12, .i13, .i14, .i15 {
+
+background-color: var(--bigRed);
+    box-shadow: var(--imageShadow);  height: 180px;
+}
+
+.i4 {
+    background-color: var(--bigRed);
+    box-shadow: var(--imageShadow);
+    height: 100px;
+    width: 100px;
+}
+
+
+
 
 
 .dropCirlce {
@@ -65,8 +256,11 @@ iframe{
     max-width: 600px;
     width: 100%;
     box-shadow: var(--imageShadow);
-    box-shadow: --imageShadow;
+
 }
+
+
+    
 
 
 .FarmBackgroundColor{
@@ -102,6 +296,21 @@ animation: farmBackground 8s ease infinite;
     width: 100%;
     background-color: var(--bigRed);
     height: 8vw;
+}
+
+.contactFooterFront{
+    font-size: 6vw;
+    overflow: hidden;
+    position: relative;
+    color: var(--bigRed);
+    bottom: 0px;
+    z-index: 1;
+    top: 50vh;
+    font-weight: 900;
+    text-align: center;
+    width: 100%;
+    height: 8vw;
+
 }
 
 .mainFarmImage{
@@ -196,6 +405,18 @@ h4{
 }
 
 
+
+
+.me123{
+    font-family: "Cabin", sans-serif;
+    display: flex;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    color: white;
+}
+
+
 .videoOverlay{
     width: 100%;
     top: 0px;
@@ -229,6 +450,13 @@ h4{
   
 }
 
+
+.more{
+  width: 100px;
+    height: 100px;
+    background-color: var(--bigRed);
+
+}
 
 .richFianl{
     position: absolute;
@@ -274,8 +502,9 @@ h4{
 .titleText{
 text-align: center;
     color: #ffffff;
-    padding: .5em;
-    background: #00000078;
+    padding-left: 7vw;
+    padding-right: 7vw;
+        background: #00000078;
 }
 
 
@@ -529,8 +758,13 @@ img {
     margin: 20px auto;
 }
 header {
+    font-family: "Cabin", sans-serif;
     padding-top: 30vh;
+    display: flex;
+    justify-content: center;
+    color: white;
   }
+
 .columns {
   display: flex;
   z-index: 2;
@@ -850,6 +1084,13 @@ h1 {
 
 }
 
+
+.grid {
+    margin: 0 auto;
+    float: none;
+}
+
+
 .static {
     padding-top: 0vh;
 }
@@ -1083,6 +1324,10 @@ h1 {
 
 }
 
+.grid {
+    margin: 0 auto;
+    float: none;
+}
 
 .column2 {
     flex: auto;
@@ -1207,6 +1452,12 @@ nav {
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s;
 }
+
+nav:hover {
+    -webkit-transform: translateY(0%);
+    transform: translateY(-100%);
+}
+
 
 .dropCirlce {
     display: none;
