@@ -61,6 +61,14 @@ iframe{
       box-shadow: var(--imageShadow);
 }
 
+#videoExample{
+    max-width: 600px;
+    width: 100%;
+    box-shadow: var(--imageShadow);
+    box-shadow: --imageShadow;
+}
+
+
 .FarmBackgroundColor{
   width: 100vw;
     z-index: -2;
