@@ -182,6 +182,18 @@ background-color: var(--bigRed) !important;
     box-shadow: var(--imageShadow);
 }
 
+
+.thumb10 {
+    background: black;
+    height: 100px;
+    width: 100px;
+  background: url(thumb4.jpg);
+    box-shadow: var(--imageShadow);
+}
+
+
+
+
 .i4 {
     background: black;
     height: 100px;
@@ -486,14 +498,17 @@ h4{
 }
 
 
+
+
 .more{
   width: 100px;
     height: 100px;
     background-color: var(--bigRed);
-          box-shadow: var(--imageShadow);
-
-
+    box-shadow: var(--imageShadow);
 }
+
+
+
 
 .richFianl{
     position: absolute;
@@ -501,6 +516,17 @@ h4{
     top: 80%;
     width: 71%;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 .richPath {
