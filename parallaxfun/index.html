@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>Parallax Fun</title>
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<div id="loader"></div>
+
+
+<body style="margin: 0px;">
+		<div class="keyart_layer" id="keyart-scrim"></div>
+		<div class="keyart" id="nonparallax"></div>
+		<div class="keyart" id="parallax">
+			<div class="keyart_layer parallax" data-speed="2" id="keyart-0"></div><!-- 00.0 -->
+			<div class="keyart_layer parallax" data-speed="5" id="keyart-1"></div><!-- 12.5 -->
+			<div class="keyart_layer parallax" data-speed="11" id="keyart-2"></div>
+			<div class="keyart_layer parallax" data-speed="26" id="keyart-3flash"></div>
+			<div class="keyart_layer parallax" data-speed="16" id="keyart-3"></div><!-- 37.5 -->
+			<div class="keyart_layer parallax" data-speed="26" id="keyart-4"></div><!-- 50.0 -->
+			<div class="keyart_layer parallax" data-speed="26" id="keyart-4"></div><!-- 50.0 -->
+			<div class="keyart_layer parallax" data-speed="36" id="keyart-5"></div><!-- 62.5 -->
+			<div class="keyart_layer parallax" data-speed="49" id="keyart-6"></div>
+			<div class="keyart_layer parallax" data-speed="49" id="keyart-6flash"></div><!-- 75.0 -->
+			<!-- 75.0 -->
+			<div class="keyart_layer parallax" data-speed="69" id="keyart-7"></div><!-- 87.5 -->
+			<div class="keyart_layer" data-speed="100" id="keyart-8"></div>
+			<div class="plane4" data-speed="51" id="keyart-10" style="z-index: 200;"></div>
+			<div class="plane" data-speed="53" id="keyart-10" style="z-index: 200;"></div>
+			<div class="plane2" data-speed="55" id="keyart-10" style="z-index: 200;"></div>
+			<div class="plane3" data-speed="57" id="keyart-10" style="z-index: 200;"></div><!-- 100. -->
+		</div>
+	<div class="box"></div>
+	<div class="box2"></div>
+	<div id="maincontain"><div id="main">
+
+
+				<div class="section buy">
+					
+					<h1 >Berlin</h1>
+				</div>
+
+				<div class="section description">
+					
+				</div>
+
+			</div>
+
+
+		<div class="marqueeMacro">
+			<p class="marquee"><span>BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -
+		BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -</span></p>
+		
+
+
+
+	
+			<p class="marquee2"><span>BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -
+		BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -BER - TXL - SXF -</span></p>
+		</div>
+
+
+
+			</div>
+
+
+
+
+	</div>
+	<script
+  src="jquery-1.12.0.min.js"
+  type="text/javascript"></script>
+	</script> 
+	<script src="jquery-migrate-1.2.1.min.js" type="text/javascript">
+	</script> 
+	<script src="javascript.js" type="text/javascript">
+	</script> 
+
+	<script type="text/javascript">
+
+	window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+
+$(window).load(function() {      //Do the code in the {}s when the window has loaded 
+  $("#loader").fadeOut(2800);  //Fade out the #loader div
+});
+
+ 
+
+</script>
+
+<script type="text/javascript">
+	function gotop(){
+    $('html, body').animate({ scrollTop: 0 }, 0);
+    }
+
+</script>
+	
+</body>
+</html>
