@@ -333,6 +333,10 @@ animation: farmBackground 8s ease infinite;
     100%{background-position:51% 0%}
 }
 
+.otherProj{
+color: var(--bigRed);
+
+}
 
 .contactFooter{
     font-size: 6vw;
