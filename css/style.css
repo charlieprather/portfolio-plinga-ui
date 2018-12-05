@@ -109,8 +109,7 @@ body {
     position: relative;
     padding-top: 6vw;
     padding-bottom: 6vw;
-    background: white;
-    background: white;
+    background: #ffeded;
 }
 
 #three {
@@ -118,7 +117,8 @@ body {
     padding-top: 6vw;
     height: 100vh;
     padding-bottom: 6vw;
-    background: white;
+    color:white;
+    background-color: var(--bigRed) !important;
 }
 
 /*  THIS IS THE GIRD SYSTEM!!!!  */
@@ -307,7 +307,11 @@ iframe{
 }
 
 
-    
+footer{
+
+    padding-top: 10vw;
+    background: #ffeded;
+}
 
 
 .FarmBackgroundColor{
@@ -319,7 +323,6 @@ iframe{
     left: 0;
 background: linear-gradient(180deg, #f45e61, #ffffff);
 background-size: 400% 400%;
-
 animation: farmBackground 8s ease infinite;
 }
 
@@ -337,7 +340,7 @@ animation: farmBackground 8s ease infinite;
     position: relative;
     color: white;
     bottom: 0px;
-    z-index: -1;
+    z-index: 0;
     font-weight: 900;
     text-align: center;
     width: 100%;
@@ -349,7 +352,7 @@ animation: farmBackground 8s ease infinite;
     font-size: 6vw;
     overflow: hidden;
     position: relative;
-    color: var(--bigRed);
+    color: white;
     bottom: 0px;
     z-index: 1;
     top: 50vh;
@@ -357,7 +360,10 @@ animation: farmBackground 8s ease infinite;
     text-align: center;
     width: 100%;
     height: 8vw;
+}
 
+.growthBack{
+    background: #ffeded;
 }
 
 .mainFarmImage{
@@ -1699,6 +1705,5 @@ nav:hover {
 
 
 }
-
 
 
