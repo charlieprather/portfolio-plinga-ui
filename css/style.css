@@ -171,21 +171,55 @@ body {
   opacity: 0;
   transition: opacity 0.5s;
   -webkit-transition: opacity 0.5s;
+background-color: var(--bigRed) !important;
 }
 
 .i1 {
     background: black;
     height: 100px;
     width: 100px;
-    background-color: var(--bigRed);
+  background: url(personalThumb.jpg);
     box-shadow: var(--imageShadow);
 }
 
+.i4 {
+    background: black;
+    height: 100px;
+    width: 100px;
+  background: url(richmediaThumb.jpg);
+    box-shadow: var(--imageShadow);
+}
+
+
+
 .i3, .i6, .i7 {
 
-background-color: var(--bigRed);
+    background-color: var(--bigRed);
     box-shadow: var(--imageShadow);  height: 280px;
 }
+
+.i6{
+background: url(farmNationThumbnail.jpg);
+
+}
+
+
+
+
+.i2{
+background: url(plingaUiThumbnail.jpg);
+height: 180px;
+}
+
+.item .i6:hover{
+background-color: var(--bigRed) !important;
+z-index: 10000;
+position: absolute;
+height: 100%;
+width: 100%;
+
+}
+
 
 .i3 {
 
@@ -195,7 +229,7 @@ background-color: var(--bigRed);
   margin-left: 30px;
 }
 
-.i2, .i4, .i8 {
+  .i8 {
 
 background-color: var(--bigRed);
     box-shadow: var(--imageShadow);  height: 180px;
@@ -1639,7 +1673,6 @@ nav:hover {
 
 
 }
-
 
 
 
