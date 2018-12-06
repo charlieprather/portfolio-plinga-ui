@@ -203,8 +203,31 @@ background-color: var(--bigRed) !important;
 }
 
 
+.i3 {
+  background: url(thumb3.jpg);
+ height: 100px;
+    width: 100px;
+}
 
-.i3, .i6, .i7 {
+.i5 {
+  background: url(thumb4.jpg);
+ height: 100px;
+    width: 100px;
+}
+
+.i7 {
+  background: url(thumb1.jpg);
+ height: 100px;
+    width: 100px;
+}
+
+.i9 {
+  background: url(thumb2.jpg);
+ height: 100px;
+    width: 100px;
+}
+
+ .i6 {
 
     background-color: var(--bigRed);
     box-shadow: var(--imageShadow);  height: 280px;
@@ -233,13 +256,7 @@ width: 100%;
 }
 
 
-.i3 {
 
-  background: none;
- height: 100px;
-    width: 100px;
-  margin-left: 30px;
-}
 
   .i8 {
 
@@ -254,7 +271,7 @@ width: 100px;
 
 }
 
-.i9, .i10, .i11, .i12, .i13, .i14, .i15 {
+ .i10, .i11, .i12, .i13, .i14, .i15 {
 
 background-color: var(--bigRed);
     box-shadow: var(--imageShadow);  height: 180px;
