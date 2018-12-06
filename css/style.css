@@ -12,7 +12,9 @@ html.no-touch .gallery a:hover span,html.touch .gallery a.touchFocus span {
   opacity:1;
 }
 
-
+a{
+  text-decoration: none;
+}
 
 * {
   box-sizing: border-box;
