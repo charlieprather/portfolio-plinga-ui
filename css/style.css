@@ -153,6 +153,25 @@ body {
     float: right;
 }
 
+.disney{
+  height: 200px;
+  width: 200px;
+  background: url(disney2.jpg);
+}
+
+.personal {
+  color: white;
+  display: table;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.34);
+}
+
+.personal:hover .title {
+  opacity: 1;
+}
+
 .item {
   color: white;
   display: table;
@@ -197,7 +216,6 @@ background-color: var(--bigRed) !important;
 
 
 .i4 {
-    background: black;
     height: 100px;
     width: 100px;
   background: url(richmediaThumb.jpg);
