@@ -116,10 +116,10 @@ body {
 
 #three {
     position: relative;
-    padding-top: 6vw;
+    padding-top: 25vh;
     height: 100vh;
     padding-bottom: 6vw;
-    color:white;
+    color: white;
     background-color: var(--bigRed) !important;
 }
 
@@ -376,16 +376,16 @@ color: var(--bigRed);
 }
 
 .contactFooter{
-    font-size: 6vw;
+font-size: 6vw;
     overflow: hidden;
     position: relative;
-    color: white;
+    color: var(--bigRed);
     bottom: 0px;
     z-index: 0;
     font-weight: 900;
     text-align: center;
     width: 100%;
-    background-color: var(--bigRed);
+    background-color: transparent;
     height: 8vw;
 }
 
@@ -1007,6 +1007,11 @@ header {
 .bdgColor{
     background-color: transparent;
   }
+
+  .bdgColor2{
+    background-color: var(--bigRed);
+  
+  }
 .wrapperimages {
   vertical-align: middle;
   text-align: center;
@@ -1076,6 +1081,10 @@ header {
     padding: 0px;
 
 }
+
+
+
+
 
 .gallery a {
   position: absolute;
@@ -1500,6 +1509,15 @@ h1 {
     background: #00000078;
 }
 
+
+#three {
+    position: relative;
+    padding-top: 25vh;
+    height: 150vh;
+    padding-bottom: 6vw;
+    color: white;
+    background-color: var(--bigRed) !important;
+}
 
 
 .biggerBox {
