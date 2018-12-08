@@ -13,12 +13,15 @@ html.no-touch .gallery a:hover span,html.touch .gallery a.touchFocus span {
 }
 
 a{
+  cursor: pointer;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
 }
+
+
 
 
 body {
@@ -45,6 +48,11 @@ body {
   height: 100vh;
 }
 
+
+.microMe{
+display: none;
+opacity: 0;
+}
 
 #home {
   mix-blend-mode: difference;
@@ -197,9 +205,9 @@ background-color: var(--bigRed) !important;
 
 .i1 {
     background: black;
-    height: 100px;
-    width: 100px;
-  background: url(personalThumb.jpg);
+    height: 90px;
+    width: 379px;
+    background: url(personalThumb.jpg);
     box-shadow: var(--imageShadow);
 }
 
@@ -300,8 +308,9 @@ background-color: var(--bigRed);
 .i4 {
     background-color: var(--bigRed);
     box-shadow: var(--imageShadow);
-    height: 100px;
+    height: 178px;
     width: 100px;
+
 }
 
 
@@ -343,6 +352,19 @@ iframe{
 
 }
 
+
+
+
+.dodger{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 10;
+    right: 0;
+}
+
+}
 
 footer{
 
@@ -732,7 +754,8 @@ margin: 4em;
   right: 0;
 }
 .draw:hover {
-  color: #f45e61;
+    background: #ffeded40;
+    color: #f45e61;
 }
 .draw:hover::before, .draw:hover::after {
   width: 100%;
@@ -1500,6 +1523,37 @@ h1 {
     padding: 10px;
 }
 
+.i1 {
+    background: black;
+    height: 90px;
+    width: 270px;
+    background: url(personalThumb.jpg);
+    box-shadow: var(--imageShadow);
+}
+
+.i4 {
+    background-color: var(--bigRed);
+    box-shadow: var(--imageShadow);
+    height: 178px;
+    width: 270px;
+}
+
+
+
+#meBdg{
+display: none;
+}
+
+
+
+.microMe{
+    opacity: 1;
+    padding-top: 230px;
+    width: 100%;
+    position: absolute;
+    display: block;
+
+}
 
 .personalInfo {
     width: 100%;
